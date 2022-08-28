@@ -37,10 +37,6 @@ def onChat(this, user, message, task, sender, *rest):
         case '%tps':
             bot.chat(': idfk press tab')
 
-        case '%nword':
-            bot.chat(': nigga')
-            bot.chat(': nigger')
-
         case '%ping':
             bot.chat('!ping '+user)
 
