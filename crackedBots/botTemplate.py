@@ -5,7 +5,7 @@ import time
 mineflayer = require('mineflayer')
 Username = input("enter username: ")
 Password = input("enter the account password: ")
-print("this version of wullieBot core is for premuim and cracked servers ")
+print("this template bot is for cracked servers ")
 Address = input("enter server IP: ")
 
 
