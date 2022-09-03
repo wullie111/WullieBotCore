@@ -17,7 +17,7 @@ bot = mineflayer.createBot({'auth': 'microsoft', 'host': Address, 'port': 25565,
 def onChat(this, user, message, task, sender, *rest):
     print(f'{user} said "{message}"')
 
-    # chat commands
+    # chat commands.
     # If you need help understanding what each command dose, buy a dictionary.
     # Most commands only work is a version of moo bot is running on the serer.
     match message:
