@@ -3,7 +3,7 @@ from javascript import require, On, Once, AsyncTask, once, off
 import time
 import os
 import random
-
+#this comment can be ignored im just testing something
 # bot info
 mineflayer = require('mineflayer')
 Username = input("enter username: ")
