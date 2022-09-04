@@ -1,0 +1,12 @@
+this document will guide you through adding a command to wulliebotCore in a simmiler manner to the original code.
+it is recomended you have some understanding of python before you start.
+
+when adding a new command know whether the command needs a suffix to make sence, e.g "%report" for full effect the user should be able to add a name after. for cases like these use an if statment as it ensures a suffix will not brake the command.
+if the command dosent need a suffix, e.g "%help" a match case should be used.
+if the command requiers a certen user then a match case fallowed by an if statemnt to detect thec command should be used.
+if the bot requiers a loop it is recomended to put them in a 'async task', when creating one fallow as close to the prexisting ones to ensure these work proparly, when creating the function give it an approprite name describing what it dose.
+
+when adding a command to the core bot pleases use the perdefined heading noted in the comments of the main file.
+if you are adding commands to a sub-bot that doesn't have these predefined heading then add your own fallowing the sturcture of the main ones.
+
+ 
