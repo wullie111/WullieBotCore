@@ -1,3 +1,0 @@
-This is a moddified copy of the original 1b1t vairient it will only work on craked servers.
-
-It is recommended that you use the newer wulliebot file in the directory above
