@@ -7,8 +7,5 @@
  add more documentation to the bots to allow for others to understand what the bots do.
  add proper icons to the bots accout and discord server.
  add CSS to the website.
- move some commands for ease of reading/ user locking.
- make more facts for randfacts
- update the github page to add links to the website
- file manage the local copy
+ make more facts for randfacts.
 
