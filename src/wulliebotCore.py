@@ -4,7 +4,7 @@ import time
 import os
 import random
 import discord
-import headerarrays.py
+from headerarrays import *
 
 # bot info
 mineflayer = require('mineflayer')
@@ -17,7 +17,7 @@ print("this version of wullieBot core is for premuim and cracked servers ")
 time.sleep(1)
 Address = input("enter server IP: ")
 
-bot = mineflayer.createBot({'auth': 'microsoft', 'host': Address, 'port': 25565, 'username': Username, 'verion': '1.18', 'hideErrors': False})
+bot = mineflayer.createBot({'auth': 'microsoft', 'host': Address, 'port': 25565, 'username': Username, 'hideErrors': False})
 
 #arry for random 
 
@@ -29,34 +29,41 @@ def onChat(this, user, message, task, sender, *rest):
     # If you need help understanding what each command dose, buy a dictionary.
     # Most commands only work is a version of moo bot is running on the serer.
     # Most of the commands use pattern matching but for commands that require and optinal suffex an if ladder is neaded.
+
     match message:
+        #usefull commands
         case '%help':  
             bot.chat('most command may not work due to moo bot not on said server, commands have a `%` prefix, help, report, gethelp , tps, ping, ip, pt, ban, summon, noword, yesword, co-ords, cancel, debug, github')
             bot.chat(': stop, kill and tpa commands are reserverd')
 
-        
+        case '%tps':
+            bot.chat(': idfk press tab')
+
+        case '%ping':
+            bot.chat('!ping '+user)
+
+        case '%pt':
+            bot.chat('!pt '+user)
+            bot.chat(': thats your play time')
+
+        case '%debug':
+            bot.chat(': Health: '+str(bot.health))
+            time.sleep(0.5)
+            bot.chat(': Hunger:'+str(bot.food))
+            time.sleep(0.5)
+            bot.chat('!ping')
+
+
+           
+        #joke commands
         case '%gethelp':
             bot.chat(': gonna cry?')
 
         case '%penis':
             bot.chat(': '+random.choice(Pens))
 
-        case '%tps':
-            bot.chat(': idfk press tab')
-
-
-        case '%ping':
-            bot.chat('!ping '+user)
-
         case '%ip':
             bot.chat(': server ip is '+Address+' the bot is hosted on 127.0.0.1')
-
-        case '%pt':
-            bot.chat('!pt '+user)
-            bot.chat(': thats your play time')      
-
-        case '%summon':
-            bot.chat(': is '+Address+' a premium server? , summon bot only works on cracked servers. This command will not work on premium servers')
 
         case '%noword':
             bot.chat(': no')
@@ -66,37 +73,33 @@ def onChat(this, user, message, task, sender, *rest):
 
         case '%co-ords':
             bot.chat(': somewhere between +30m +30m and -30m -30m')
-
-        case '%health':
-            bot.chat(': try using %debug')
-
-           
-        case '%debug':
-            bot.chat(': Health: '+str(bot.health))
-            time.sleep(0.5)
-            bot.chat(': Hunger:'+str(bot.food))
-            time.sleep(0.5)
-            bot.chat('!ping')
-
+            
         case '%kit':
             bot.chat(user+' has been given '+random.choice(headerarrays.Kit)+' kit')
 
+        # cracked commands
         case '%summonSpy':
             bot.chat('this is designed for cracked servers, if the bot doesnt appere in the next 30 seconds assume the server is not cracked')
 
+        case '%summon':
+            bot.chat(': is '+Address+' a premium server? , summon bot only works on cracked servers. This command will not work on premium servers') 
+
 
     # start of the if ladder, could be moved if needed
+
+    #usefull
     if '%git' in message:
          bot.chat(': the projects github https://github.com/wullie111/WullieBotCore')
 
     if '%report' in message:
         bot.chat(message[:8]+'has been reported, admins will deal with them soon' )
 
+    #joke
     if '%ban' in message:
          bot.chat(': do i look like a fucking admin?')
 
     if '%8ball' in message:
-        bot.chat(random.choice(headerarrys.8respawnce))
+        bot.chat(random.choice(headerarrys.respawnce))
 
     # user spesific commands
     # Refence to the reserved commands, only these listed in the cases below can use reserved command.
