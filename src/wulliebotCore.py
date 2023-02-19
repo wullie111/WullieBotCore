@@ -22,7 +22,7 @@ bot = mineflayer.createBot({'auth': 'microsoft', 'host': Address, 'port': 25565,
 bot.loadPlugin(tpsPlugin) 
 
 #discord intergration begins
-TOKEN = 'ODg2NDE2Mzc0NzE1NTM5NDU2.Gz2i_E.H-TG1_eGt0hfTu7jJhZ9HF3Xa-SJeWZFzunExo'
+TOKEN = ''
 intents = discord.Intents().all()
 client = discord.Client(intents=intents)
 channel = "1015424366332362842" 
