@@ -1,6 +1,6 @@
 Pens = ["8=D", "8==D", "8===D", "8====D", "8=====D", "8======D", "8=======D", "8========D", "8=========D", "8==========D", "8===========D", "8===============D", "8==================D" "8================================================D" ]
 
-8respawnce = ["yes", "no", "ask later", "all signs point to yes", "all signs point to no", "perhaps", "outcome looks good", "outcome looks bad", "try again", "with a high chance", "with a low chance", "will happen", "wont happen"]
+respawnce = ["yes", "no", "ask later", "all signs point to yes", "all signs point to no", "perhaps", "outcome looks good", "outcome looks bad", "try again", "with a high chance", "with a low chance", "will happen", "wont happen"]
 
 Kit = ["end crystal", "obsidian", "stone", "wulliebotPvP", "dupe", "pobbob sex dupe", "dirt", "totem", "pvp", "notch apple", "offical wullie nword", "mulfoKit", "beacon", "food", "build", "TnT", "zqwqTnT", "wither", "wood"]
 
