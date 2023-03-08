@@ -2,10 +2,7 @@
  make report actualy useful by making it ping the servers admins/mods.
  add an SQL database to record playtime, times users said the n-word, deaths etc, etc.
  add other bot into the cracked bots folder.
- get a '%tps' command to work.
  make a '%ping' command to return the users ping.
  add more documentation to the bots to allow for others to understand what the bots do.
- add proper icons to the bots accout and discord server.
- add CSS to the website.
  make more facts for randfacts.
 

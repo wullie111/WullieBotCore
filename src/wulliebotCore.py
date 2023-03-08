@@ -4,21 +4,18 @@ import time
 import os
 import random
 import discord
+import json
 from headerarrays import *
 
 mineflayer = require('mineflayer')
 tpsPlugin = require('mineflayer-tps')(mineflayer)
 
+#Bot info 
+with open('userData.json', 'r') as BotInfo:
+    Info = json.load(BotInfo)
 
-#bot info
-print("login is designed for the new microsoft auth system. Do not try loging in whith a older mojang acount")
-time.sleep(0.5)
-Username = input("enter username: ")
-print("this version of wullieBot core is for premuim and cracked servers ")
-time.sleep(1)
-Address = input("enter server IP: ")
 
-bot = mineflayer.createBot({'auth': 'microsoft', 'host': Address, 'port': 25565, 'username': Username, 'hideErrors': False})
+bot = mineflayer.createBot({'auth': 'microsoft', 'host': Info["Server"], 'port': 25565, 'username': Info["Username"], 'hideErrors': False})
 bot.loadPlugin(tpsPlugin) 
 
 #discord intergration begins
